@@ -27,6 +27,7 @@
     no-repeat;
     /* test */
     z-index: -1;
+    isolation: isolate;
 }
 
 .backdrop-blur-layer {
@@ -40,6 +41,7 @@
   /* test */
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
+  border: 5px solid red
 }
 /* -------------------------------------------- */
 
