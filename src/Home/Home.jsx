@@ -9,6 +9,8 @@ import {
 FaPhone
 } from "react-icons/fa";
 import "./Home.css";
+import profilePic from "/sherneal-light.jpg";
+import logo2 from "/s-logo2.svg";
 
 function Home() {
   const [liked, setLiked] = useState(false);
@@ -48,13 +50,14 @@ function Home() {
 
       <div className={`card ${expanded ? "card--expanded" : ""}`}>
         <div className="logo-container">
-          <img className="logo-svg" src="src/Images/s-logo2.svg" alt="" />
+          <img className="logo-svg" src={logo2} alt="" />
         </div>
 
         <div className="card-image-wrap">
           <img
             // src="src/Images/Sherneal-dark.jpg"
-            src="src/Images/sherneal-light.jpg"
+            // src="src/Images/sherneal-light.jpg"
+            src={profilePic}
             alt="Profile"
             className="card-image"
             draggable={false}
