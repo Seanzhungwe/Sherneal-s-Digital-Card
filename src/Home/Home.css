@@ -23,7 +23,7 @@
   font-family: -apple-system, "SF Pro Display", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   overflow: hidden;
-  background: url("src/Images/sherneal-light.jpg") center center / cover
+  background: url("/sherneal-light.jpg") center center / cover
     no-repeat;
 }
 
