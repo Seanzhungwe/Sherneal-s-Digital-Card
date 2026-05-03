@@ -6,6 +6,7 @@ import {
   FaGlobe,
   FaChevronDown,
   FaEnvelope,
+FaPhone
 } from "react-icons/fa";
 import "./Home.css";
 
@@ -16,22 +17,27 @@ function Home() {
   const socialData = [
     {
       icon: <FaLinkedin size={15} />,
-      username: "@joseph-dev",
+      username: "sherneal joseph",
       url: "https://www.linkedin.com/in/sherneal-joseph-4312ba354?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
     {
       icon: <FaFacebook size={15} />,
-      username: "Joseph Studio",
+      username: "sherneal joseph",
       url: "https://www.facebook.com/share/1cC616KcsX/",
     },
     {
       icon: <FaInstagram size={15} />,
-      username: "@joseph_ui",
+      username: "sherneal.joseph",
       url: "https://www.instagram.com/sherneal.joseph?igsh=MXh3ZDVvYmI5dzF0aA==",
     },
     {
+      icon: <FaPhone size={15} />,
+      username: "+263 71 366 5492",
+      url: "+263713665492",
+    },
+    {
       icon: <FaGlobe size={15} />,
-      username: "joseph.design",
+      username: "shernealjoseph.com",
       url: "info@shernealjoseph.com",
     },
   ];
@@ -47,7 +53,8 @@ function Home() {
 
         <div className="card-image-wrap">
           <img
-            src="src/Images/Sherneal-dark.jpg"
+            // src="src/Images/Sherneal-dark.jpg"
+            src="src/Images/sherneal-light.jpg"
             alt="Profile"
             className="card-image"
             draggable={false}
@@ -94,7 +101,7 @@ function Home() {
           </div>
 
           {/* Replaced button with anchor tag for email linking */}
-          <a href="mailto:your.email@example.com" className="contact-btn">
+          <a href="mailto:info@shernealjoseph.com" className="contact-btn">
             Get In Touch
             <FaEnvelope size={16} />
           </a>

@@ -1,3 +1,17 @@
+
+:root {
+  --white-ish: #f0e7d7;
+}
+
+:root {
+  --pink-ish: #ff9f89;
+}
+
+
+
+
+
+
 /*----------------------Backdrop----------------------*/
 .backdrop {
   position: fixed;
@@ -9,7 +23,7 @@
   font-family: -apple-system, "SF Pro Display", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
   overflow: hidden;
-  background: url("src/Images/Sherneal-dark.jpg") center center / cover
+  background: url("src/Images/sherneal-light.jpg") center center / cover
     no-repeat;
 }
 
@@ -22,9 +36,6 @@
 }
 /* -------------------------------------------- */
 
-
-
-
 /* ----------------------Card ----------------------*/
 .card {
   position: relative;
@@ -33,7 +44,7 @@
   max-width: 340px;
   border-radius: 24px;
   overflow: hidden;
-  background: #202020;
+  background: #655137;
 
   /* Frosted glass */
   /* background: #12081c8c;
@@ -70,7 +81,6 @@
     inset 0 0 0 0.5px #ffffff1a;
 }
 
-
 .logo-container {
   position: absolute;
   top: 16px;
@@ -87,7 +97,6 @@
   object-fit: contain;
   filter: drop-shadow(0 2px 4px #0000004d);
 }
-
 
 .card-image-wrap {
   position: relative;
@@ -114,20 +123,19 @@
   z-index: 1;
   background: linear-gradient(
     to bottom,
-    #00000038 0%,
+    /* #00000038 0%,
     #2020206c 30%,
     #20202041 52%,
     #20202041 68%,
     #20202065 80%,
-    #202020 100%
+    #202020 100% */
+    #65513700 68%,
+    #655137cb 80%,
+    #655137 100%
   );
 }
 
 /* -------------------------------------------- */
-
-
-
-
 
 /* ---------------------- Content ----------------------*/
 .content {
@@ -157,7 +165,7 @@
   margin: 0;
   font-size: 22px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white-ish);
   letter-spacing: -0.4px;
   line-height: 1.15;
   text-shadow: 0 1px 8px #00000066;
@@ -167,7 +175,7 @@
   margin: 0;
   font-size: 13px;
   font-weight: 400;
-  color: #ffffff9e;
+  color:var(--white-ish);
   line-height: 1.6;
   letter-spacing: 0.01em;
 }
@@ -202,7 +210,7 @@
   gap: 0;
   font-size: 12px;
   font-weight: 500;
-  color: #ffffffd1;
+  color: var(--white-ish);
   background: #918b8b1a;
   border: 0.5px solid #ffffff2e;
   border-radius: 20px;
@@ -222,7 +230,7 @@
 .icon:hover {
   background: #ffffff33;
   border-color: #ffffff66;
-  color: #ff9f89;
+  color:var(--pink-ish);
   transform: translateY(-2px);
 }
 
@@ -244,8 +252,6 @@
 }
 /* -------------------------------------------- */
 
-
-
 /* ----------------------------- Expand button --------------------------------*/
 .socials-expand-btn {
   background: none;
@@ -263,17 +269,14 @@
 }
 
 .socials-expand-btn:hover {
-  color: #ffffffe6;
+  color: var(--white-ish);
 }
 
 .socials-expand-btn--active {
   transform: rotate(180deg);
 }
+
 /* -------------------------------------------------------------*/
-
-
-
-
 
 .contact-btn {
   text-decoration: none;
@@ -283,7 +286,7 @@
   padding: 14px 0;
   border-radius: 50px;
   border: none;
-  background: #fffffff7;
+  background: var(--white-ish);
   color: #3e3e3f;
   font-size: 15px;
   font-weight: 600;
@@ -302,17 +305,15 @@
 }
 
 .contact-btn:hover {
-  background: #ff9f89;
+  background: var(--pink-ish);
   transform: scale(1.015);
   color: #fff;
 }
 
 .contact-btn:active {
   transform: scale(0.985);
-  background: #ffffffe0;
+  background: var(--white-ish);
 }
-
-
 
 /* -----btn animation effect------*/
 .ripple {
@@ -320,7 +321,7 @@
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #ff9f89;
+  background: var(--pink-ish);
   transform: translate(-50%, -50%) scale(0);
   animation: ripple-out 0.65s cubic-bezier(0.22, 1, 0.36, 1) forwards;
   pointer-events: none;
@@ -342,9 +343,6 @@
 }
 /* ---------------------------- */
 
-
-
-
 .like-btn {
   position: absolute;
   top: 16px;
@@ -361,7 +359,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: #ffffffbf;
+  color: var(--white-ish);
   padding: 0;
   transition:
     color 0.2s ease,
@@ -379,7 +377,7 @@
 }
 
 .like-btn--liked {
-  color: #ff9f89;
+  color: var(--pink-ish);
 }
 
 .like-btn--liked svg {
@@ -432,15 +430,52 @@
     min-height: 340px;
   }
 
-  .card-fade-overlay {
-    background: linear-gradient(
+  /* .card-fade-overlay {
+         background: linear-gradient(
       to right,
+    
+      comment out
       #00000000 40%,
       #20202041 65%,
-      #20202041 82%,
-      #202020 100%
+      #65513759 82%,
+      #655137 100%
+        #00000000 40%, 
+        
+        #65513700 65%,
+      #655137b6 92%,
+      #655137 100%
+    ) !important; 
+    
+  }*/
+
+  .card-fade-overlay {
+    /* 1. Your original background gradient */
+    background: linear-gradient(
+        to right,
+        #65513700 65%,
+        #655137b6 92%,
+        #655137 100%
     ) !important;
-  }
+
+    /* 2. Apply the blur effect */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    /* 3. The "Magic": Mask the blur to match the gradient visibility */
+    /* This makes the blur 0% visible at 65% and 100% visible at 92% */
+    mask-image: linear-gradient(
+        to right, 
+        transparent 65%, 
+        black 92%
+    );
+    -webkit-mask-image: linear-gradient(
+        to right, 
+        transparent 65%, 
+        black 92%
+    );
+}
+
+  
 
   .content {
     flex: 1;
