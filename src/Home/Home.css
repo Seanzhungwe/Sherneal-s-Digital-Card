@@ -28,6 +28,7 @@
 }
 
 .backdrop-blur-layer {
+  background-color: #00000010;
   position: absolute;
   inset: 0;
   backdrop-filter: blur(18px) brightness(0.55) saturate(1.2);
