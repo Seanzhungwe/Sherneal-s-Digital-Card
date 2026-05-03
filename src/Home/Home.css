@@ -25,6 +25,8 @@
   overflow: hidden;
   background: url("/sherneal-light.jpg") center center / cover
     no-repeat;
+    /* test */
+    z-index: -1;
 }
 
 .backdrop-blur-layer {
