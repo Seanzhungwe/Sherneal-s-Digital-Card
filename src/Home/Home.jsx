@@ -45,7 +45,8 @@ function Home() {
   ];
 
   return (
-    <div className="backdrop">
+    // <div className="backdrop">
+    <div className="backdrop" style={{ backgroundImage: `url(${profilePic})` }}>
       <div className="backdrop-blur-layer" />
 
       <div className={`card ${expanded ? "card--expanded" : ""}`}>
