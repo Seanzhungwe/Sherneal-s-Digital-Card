@@ -9,7 +9,7 @@ import {
 FaPhone
 } from "react-icons/fa";
 import "./Home.css";
-import profilePic from "/sherneal-light.jpg";
+import profilePic from "../Images/sherneal-light.jpg";
 import logo2 from "/s-logo2.svg";
 
 function Home() {
@@ -68,12 +68,13 @@ function Home() {
 
         <div className="content">
           <div className="header">
+            <p className="sub-title">Fitness with</p>
             <div className="title-block">
               <h2 className="title">Sherneal Joseph</h2>
             </div>
             <p className="description">
-              A sleek in the heart of , offering a blend of luxury, skyline
-              views, and modern comfort.
+              Results don't come from <span>'maybe next Monday'</span> Let's
+              start building your best self today!
             </p>
           </div>
 
