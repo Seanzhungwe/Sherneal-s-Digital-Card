@@ -46,24 +46,26 @@ function Home() {
     //   url: "https://www.linkedin.com/in/sherneal-joseph-4312ba354?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     // },
     {
-      icon: <FaInstagram size={17} />,
-      username: "sherneal joseph",
-      url: "https://www.facebook.com/share/1cC616KcsX/",
-    },
-    {
       icon: <FaFacebookF size={15} />,
       username: "sherneal.joseph",
       url: "https://www.instagram.com/sherneal.joseph?igsh=MXh3ZDVvYmI5dzF0aA==",
     },
     {
-      icon: <FaPhoneAlt size={14} />,
-      username: "+263 713 665 492",
-      url: "tel:+263713665492",
-    },
-    {
       icon: <FaGlobe size={15} />,
       username: "shernealjoseph.com",
       url: "https://www.shernealjoseph.com/",
+    },
+
+    {
+      icon: <FaInstagram size={17} />,
+      username: "sherneal joseph",
+      url: "https://www.facebook.com/share/1cC616KcsX/",
+    },
+
+    {
+      icon: <FaPhoneAlt size={14} />,
+      username: "+263 713 665 492",
+      url: "tel:+263713665492",
     },
   ];
 

@@ -64,7 +64,13 @@ body,
   max-width: 340px;
   border-radius: 24px;
   overflow: hidden;
-  background: #655137;
+  /* background: #655137; */
+  background: linear-gradient(160deg,
+  #705736 0%,
+  #655137 30%,
+  #655137 65%,
+  #3b3123cb 90%
+);
   box-shadow:
     0 2px 4px #0000001f,
     0 12px 32px #00000047,
@@ -202,19 +208,17 @@ body,
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .icons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 7px;
+  gap: 5px;
   width: 100%;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .icon {
   position: relative;
@@ -228,16 +232,13 @@ body,
   background: #918b8b1a;
   border: 0.5px solid #ffffff2e;
   border-radius: 20px;
-  padding: 8px;
-  letter-spacing: 0.01em;
+  padding: 9px;
+  /* letter-spacing: 0.01em; */
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   text-decoration: none;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-
-
-
 
 .icon:hover {
   background: #ffffff33;
@@ -272,7 +273,7 @@ body,
 }
 
 .icons--expanded .icon {
-  padding: 8px 14px;
+  padding: 8px;
   gap: 6px;
   flex: 1 1 calc(50% - 4px);
   min-width: 0;
@@ -285,7 +286,7 @@ body,
 
 .icons--expanded .icon:last-child:nth-child(odd) {
   flex: 0 1 78%;
-  max-width: 78%;
+  max-width: 80%;
 }
 
 /* ----------------------------- Expand button --------------------------------*/
@@ -312,12 +313,6 @@ body,
   transform: rotate(180deg);
 }
 /* -------------------------------------------------------------*/
-
-
-
-
-
-
 
 .contact-btn {
   text-decoration: none;
@@ -450,12 +445,20 @@ body,
 
 /* ----------------------Desktop layout / Queries----------------------*/
 @media (min-width: 640px) {
+
   .card {
     max-width: 720px;
     display: flex;
     flex-direction: row;
     min-height: 340px;
     max-height: 400px;
+
+  background: linear-gradient(120deg,
+  #705736 0%,
+  #655137 30%,
+  #655137 65%,
+  #3b3123cb 90%
+);
   }
 
   .card--expanded {
@@ -476,15 +479,24 @@ body,
     min-height: 340px;
   }
 
-  .card-fade-overlay {
+  /* .card-fade-overlay {
     background: linear-gradient(
       to right,
       #65513700 65%,
       #655137b6 92%,
       #655137 100%
-    ) !important;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+    ) !important; */
+
+    .card-fade-overlay {
+  background: linear-gradient(
+    to right,
+    #65513700 65%,
+    #655137b6 92%,
+    #655137 100%
+  ) !important;
+    
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     mask-image: linear-gradient(to right, transparent 65%, black 92%);
     -webkit-mask-image: linear-gradient(to right, transparent 65%, black 92%);
   }
@@ -492,7 +504,8 @@ body,
   .content {
     flex: 1;
     margin-top: 0;
-    padding: 32px 28px 28px 24px;
+    /* padding: 32px 28px 28px 24px; */
+        padding: 10px 15px 5px 1px;
     justify-content: center;
   }
 
