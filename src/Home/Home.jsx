@@ -6,16 +6,6 @@ import { useState } from "react";
 // import Globe from "../Icons/Globe.png";
 // import Phone from "../Icons/Phone.png";
 
-// import {
-//   FaLinkedin,
-//   FaFacebook,
-//   FaInstagram,
-//   FaGlobe,
-//   FaChevronDown,
-//   FaEnvelope,
-//   FaPhone,
-// } from "react-icons/fa";
-
 import { MdVerified} from "react-icons/md";
 
 import {
@@ -26,6 +16,7 @@ import {
   FaChevronDown,
   FaEnvelope,
   FaPhoneAlt,
+  FaPhone
 
 } from "react-icons/fa";
 
@@ -63,7 +54,7 @@ function Home() {
     },
 
     {
-      icon: <FaPhoneAlt size={14} />,
+      icon: <FaPhoneAlt size={13} />,
       username: "+263 713 665 492",
       url: "tel:+263713665492",
     },
