@@ -1,13 +1,36 @@
 import { useState } from "react";
+
+// import LinkedIn from "../Icons/LinkedIn.png";
+// import FaceBook from "../Icons/FaceBook.png";
+// import Insta from "../Icons/Insta.png";
+// import Globe from "../Icons/Globe.png";
+// import Phone from "../Icons/Phone.png";
+
+// import {
+//   FaLinkedin,
+//   FaFacebook,
+//   FaInstagram,
+//   FaGlobe,
+//   FaChevronDown,
+//   FaEnvelope,
+//   FaPhone,
+// } from "react-icons/fa";
+
+import { MdVerified} from "react-icons/md";
+
 import {
-  FaLinkedin,
-  FaFacebook,
+  FaLinkedinIn,
+  FaFacebookF,
   FaInstagram,
   FaGlobe,
   FaChevronDown,
   FaEnvelope,
-FaPhone
+  FaPhoneAlt,
+
 } from "react-icons/fa";
+
+
+
 import "./Home.css";
 import profilePic from "../Images/sherneal-light.jpg";
 import logo2 from "/s-logo2.svg";
@@ -17,30 +40,30 @@ function Home() {
   const [expanded, setExpanded] = useState(false);
 
   const socialData = [
+    // {
+    //   icon: <FaLinkedinIn size={15} />,
+    //   username: "sherneal joseph",
+    //   url: "https://www.linkedin.com/in/sherneal-joseph-4312ba354?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    // },
     {
-      icon: <FaLinkedin size={15} />,
-      username: "sherneal joseph",
-      url: "https://www.linkedin.com/in/sherneal-joseph-4312ba354?utm_source=share_via&utm_content=profile&utm_medium=member_android",
-    },
-    {
-      icon: <FaFacebook size={15} />,
+      icon: <FaInstagram size={17} />,
       username: "sherneal joseph",
       url: "https://www.facebook.com/share/1cC616KcsX/",
     },
     {
-      icon: <FaInstagram size={15} />,
+      icon: <FaFacebookF size={15} />,
       username: "sherneal.joseph",
       url: "https://www.instagram.com/sherneal.joseph?igsh=MXh3ZDVvYmI5dzF0aA==",
     },
     {
-      icon: <FaPhone size={15} />,
-      username: "+263 71 366 5492",
-      url: "+263713665492",
+      icon: <FaPhoneAlt size={14} />,
+      username: "+263 713 665 492",
+      url: "tel:+263713665492",
     },
     {
       icon: <FaGlobe size={15} />,
       username: "shernealjoseph.com",
-      url: "info@shernealjoseph.com",
+      url: "https://www.shernealjoseph.com/",
     },
   ];
 
@@ -75,6 +98,7 @@ function Home() {
             <p className="sub-title">Fitness with</p>
             <div className="title-block">
               <h2 className="title">Sherneal Joseph</h2>
+              <MdVerified color="ff9f89" className="veritick" />
             </div>
             <p className="description">
               Results don't come from <span>'maybe next Monday'</span> Let's
@@ -87,10 +111,10 @@ function Home() {
               {socialData.map((social, index) => (
                 <a
                   key={index}
-                  href={social.url}
-                  target="_blank"
+                  href={social.url} // This will now be "tel:+263713665492"
+                  target={social.url.startsWith("http") ? "_blank" : "_self"} // Only use _blank for websites
                   rel="noopener noreferrer"
-                  className="icon "
+                  className="icon"
                 >
                   {social.icon}
                   {expanded && (
@@ -109,7 +133,7 @@ function Home() {
             </button>
           </div>
 
-          {/* Replaced button with anchor tag for email linking */}
+          {/* get in touch button */}
           <a href="mailto:info@shernealjoseph.com" className="contact-btn">
             Get In Touch
             <FaEnvelope size={16} />
